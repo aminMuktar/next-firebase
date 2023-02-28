@@ -1,0 +1,37 @@
+$profile-dimension: 100px;
+
+.container {
+    margin: 100px;
+}
+
+.profilePhoto {
+    height: $profile-dimension;
+    width: $profile-dimension;
+    position: relative;
+    transition: 0.3s ease;
+    border-radius: 50%;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.uploadIcon {
+    animation: scale 1.3s ease-in infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.form > div {
+    margin-bottom: 10px;
+}
